@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sohail - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    section {
+        padding: 20px;
+        margin: 20px 0;
+    }
+    
+    #about, #portfolio, #contact {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    
+    .item {
+        background-color: #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        width: 30%;
+        text-align: center;
+        size-adjust: 10px;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form input, form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    form button {
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }</style>
+</head>
+
+<body>
+    <script>document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for your message!');
+        // You can add code here to handle the form submission, like sending data to a server.
+    });</script>
+    <header>
+        <h1>Muhammad Sohail</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am young talented Graphic Designer, Video Editor, Social media Manager and web developer. I can help you create and manage your social media campaigns across all major platforms like Facebook, Twitter, Instagram and more. Proficient In photo, video editing and web development, with skills in programming languages like C++, Python, HTML, CSS, JavaScript and Bootstrap. </p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <div class="item" >Project 1</div>
+            
+            <div class="item">Project 2</div>
+            
+            <div class="item">Project 3</div>
+        
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <input type="text" id="name"placeholder="Name"> >
+            <input type="email" id="email"placeholder="Email"> >
+            <textarea id="message" placeholder="Meassage"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Muhammad Sohail. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
